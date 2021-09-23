@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp">
+    <LinearLayout
+        android:background="#abcdef"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:id="@+id/txtNoteText"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="6dp"
+            android:layout_margin="10dp"
+            tools:text="Todo Note 1 "
+            android:layout_weight="8.5"/>
+        <ImageView
+            android:id="@+id/imgRemove"
+            android:src="@drawable/ic_baseline_delete_forever_24"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:padding="6dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1.5"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
